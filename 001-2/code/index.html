@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminder App</title>
+</head>
+<body>
+    <form id="reminder-form">
+        <input type="text" id="title-input" placeholder="Title" required>
+        <input type="number" id="priority-input" placeholder="Priority(enter number)" min="1" required>
+        <input type="color" id="color-input" value="#ffffff">
+        <textarea id="description-input" placeholder="Description"></textarea>
+        <div class="actions">
+            <button type="submit" id="add-reminder-btn">Add Reminder</button>
+            <button type="button" id="show-reminders-btn">Show All Reminders</button>
+        </div>
+        <div id="reminders-container">Reminders:</div>
+    </form>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
