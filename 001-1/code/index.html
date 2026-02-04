@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registry</title>
+</head>
+<body>
+<form id="student-form">
+    <label>
+        First Name
+        <input id="firstNameInput" type="text" name="firstName" required>
+    </label>
+    <label>
+        Last Name
+        <input id="lastNameInput" type="text" name="lastName" required>
+    </label>
+    <label>
+        Age
+        <input id="ageInput" type="number" name="age" min="1" required>
+    </label>
+    <label>
+        Email
+        <input id="emailInput" type="email" name="email" required>
+    </label>
+    <button id="submitButton" type="submit">Register Student</button>
+
+    <div id="studentListContainer">
+        <h2>Registered Students</h2>
+        <ol id="studentList"></ol>
+    </div>
+</form>
+    <script type="module" src="/code/main.js"></script>
+</body>
+</html>
